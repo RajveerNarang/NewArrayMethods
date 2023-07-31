@@ -8,11 +8,18 @@ console.log("orignal1", people);
 
 const newPeople = people.with(2, "Newer");
 
-console.log("orignal1", people);
 console.log("Newer1", newPeople);
+console.log("orignal1", people);
 
 // toSorted Array method
 const sortedPeople = people.toSorted();
 
-console.log("orignal1", people);
 console.log("Sorted1", sortedPeople);
+console.log("orignal1", people);
+
+// toReversed Array method
+
+const reversedPeople = people.toReversed();
+
+console.log("Reversed1", reversedPeople);
+console.log("orignal1", people);
