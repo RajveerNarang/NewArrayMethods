@@ -7,6 +7,27 @@
     <title>4 New Array Methods</title>
   </head>
   <body>
+    <h1>4 New Array Methods</h1>
     <script src="4newArrayMethods.js"></script>
+    <script>
+      // Function to render the data
+
+      function renderData() {
+        const outputDiv = document.createElement("div");
+
+        outputDiv.innerHTML = `
+                <h3>Original Array: ${people.join(", ")}</h3>
+                <h3>Copy of Array: ${peopleCopy.join(", ")}</h3>
+                <h3>Newer Array: ${newPeople.join(", ")}</h3>
+                <h3>Sorted Array: ${sortedPeople.join(", ")}</h3>
+                <h3>Reversed Array: ${reversedPeople.join(", ")}</h3>
+                <h3>Spliced Array: ${splicedPeople.join(", ")}</h3>
+            `;
+        document.body.appendChild(outputDiv);
+      }
+
+      // Call the function to render the data
+      renderData();
+    </script>
   </body>
 </html>
